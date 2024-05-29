@@ -1,6 +1,10 @@
 from libraries import *
 
+load_dotenv()
+
 RIOT_API_KEY = os.getenv('RIOT_API_KEY')
+CHANNEL_ID = os.getenv('CHANNEL_ID')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 bot = commands.Bot(command_prefix="!", intents = discord.Intents.all())
 
